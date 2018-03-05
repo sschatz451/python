@@ -1,12 +1,16 @@
 #Zahlenraten
 
 import random
-zufallszahl =(random.randint(1,100))
 fertig = True
 titel = "Willkommen beim Zahlen-Rate-Spiel!"
-text = "Bitte versuche meine Zahl zwischen 1 und 100 zu erraten."
-counter = 0
 print(titel)
+ratens = "Von wo wollen Sie raten?\n"
+ratenzs = int(input(ratens))
+raten = "Bis wohin wollen Sie raten?\n"
+ratenz = int(input(raten))
+text = "Bitte versuche meine Zahl zwischen",ratenzs," und ",ratenz," zu erraten."
+zufallszahl =(random.randint(ratenzs,ratenz))
+counter = 0
 print(text)
 eingabeText = "Eingabe: "
 while (fertig):
